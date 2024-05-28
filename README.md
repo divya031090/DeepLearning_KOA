@@ -26,36 +26,37 @@ Required R packages: DESeq2, limma, ggplot2, dplyr, caret
 
 ## Usage
 Run the files in this order:
-Clustering with Variational Autoencoder
+
+1) Clustering with Variational Autoencoder
 Run the Clustering_Variational_Autoencoder.py script to perform clustering on your dataset.
 
 python Clustering_Variational_Autoencoder.py
 
-Differential Expression Analysis
+2) Differential Expression Analysis
 Use the Diff_Expr.R script to perform differential expression analysis for the signature within each cluster
 
 Rscript Diff_Expr.R
 
-Standardized Mean Differences
+3) Standardized Mean Differences
 Calculate standardized mean differences using std_mean_diff.R for the signature within each cluster:
 
 Rscript std_mean_diff.R
 
-Signature Plots
+4) Signature Plots
 Generate signature plots for the top 10 variables identified as significant through both Standardized Mean Differences and Differential Expression Analysis
 
 Rscript signature_plots.R
 
-Variable Selection for ML Analysis
+5) Variable Selection for ML Analysis
 Pre-process and select variables for machine learning modeling based on abs(log fold change) of 1.1 for metabolites and 1.5 for miRNAs:
 
 Rscript Diff_expr_response.R
 
-Integrative Machine Learning Framework
+6) Integrative Machine Learning Framework
 Predict longitudinal response using the integrative machine learning framework 
 
 Rscript Integrative_ML.R
 
-License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
