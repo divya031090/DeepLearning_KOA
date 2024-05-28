@@ -20,8 +20,11 @@ Integrative_ML.R: An R script that outlines an integrative machine learning fram
 
 ## Prerequisites
 Python 3.10
+
 R 4.2
+
 Required Python libraries: numpy, pandas, tensorflow, keras, scikit-learn
+
 Required R packages: DESeq2, limma, ggplot2, dplyr, caret
 
 ## Usage
