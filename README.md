@@ -20,11 +20,12 @@ Integrative_ML.R: An R script that outlines an integrative machine learning fram
 
 The analysis utilizes multiple domain-specific datasets:
 
-Clinical_data.csv
-metabolites.csv
-RNA_plasma.csv
-RNA_synovial.csv
-RNA_urine.csv
+1) Clinical_data.csv
+
+2) metabolites.csv
+3) RNA_plasma.csv
+4) RNA_synovial.csv
+5) RNA_urine.csv
 These datasets encompass clinical data, metabolite concentrations, and miRNA sequencing data from different sources. The data from miRNomics experiments were normalized using sum normalization, log-transformation, and Pareto scaling. The normalization process involved:
 
 Sum Normalization: Dividing the library size of each cell by the median library size of all cells.
