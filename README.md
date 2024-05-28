@@ -26,11 +26,15 @@ The analysis utilizes multiple domain-specific datasets:
 3) RNA_plasma.csv
 4) RNA_synovial.csv
 5) RNA_urine.csv
-These datasets encompass clinical data, metabolite concentrations, and miRNA sequencing data from different sources. The data from miRNomics experiments were normalized using sum normalization, log-transformation, and Pareto scaling. The normalization process involved:
 
+
+These datasets encompass clinical data, metabolite concentrations, and miRNA sequencing data from different sources. The data from miRNomics experiments were normalized using sum normalization, log-transformation, and Pareto scaling. The normalization process involved:
 Sum Normalization: Dividing the library size of each cell by the median library size of all cells.
+
 Log-Transformation: Log-transforming the normalized counts.
+
 Pareto Scaling: Scaling the transformed data to achieve unit variance and zero mean.
+
 The transformed data underwent linear modeling to compare expression levels across different clusters and experimental conditions. Empirical Bayes moderation techniques were applied to stabilize variance estimates within differential expression analysis. Metabolite concentrations were similarly normalized, log-transformed, and scaled using the Pareto method.
 
 
