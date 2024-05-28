@@ -1,8 +1,8 @@
-# DeepLearning_KOA
+#Introduction
 
 This repository contains code for a comprehensive analysis framework utilizing multiomic multimodal data, including clustering using Variational Autoencoders, differential expression analysis, and integrative machine learning for predicting longitudinal response.
 
-Repository Structure
+##Repository Structure
 
 Clustering_Variational_Autoencoder.py: This Python script implements a Variational Autoencoder for clustering data based on integrating multimodal data.
 
@@ -16,15 +16,15 @@ Diff_expr_response.R: An R script for selecting variables for machine learning a
 
 Integrative_ML.R: An R script that outlines an integrative machine learning framework to predict longitudinal response using the multimodal data domains.
 
-Getting Started
+##Getting Started
 
-Prerequisites
+##Prerequisites
 Python 3.10
 R 4.2
 Required Python libraries: numpy, pandas, tensorflow, keras, scikit-learn
 Required R packages: DESeq2, limma, ggplot2, dplyr, caret
 
-Usage
+##Usage
 Run the files in this order:
 Clustering with Variational Autoencoder
 Run the Clustering_Variational_Autoencoder.py script to perform clustering on your dataset.
